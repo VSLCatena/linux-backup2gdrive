@@ -1,6 +1,6 @@
-from pydrive.drive import GoogleDrive
-from pydrive.auth import GoogleAuth
-from pydrive.auth import ServiceAccountCredentials
+from pydrive2.drive import GoogleDrive
+from pydrive2.auth import GoogleAuth
+from pydrive2.auth import ServiceAccountCredentials
 
 gauth = GoogleAuth()
 scope = ['https://www.googleapis.com/auth/drive']
