@@ -1,0 +1,3 @@
+folderid='googledirectoryID' 
+BACKUP_DIR="/tmp/" 
+TARGET_DIR="/var/www/"
