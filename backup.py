@@ -5,10 +5,11 @@ from pydrive2.drive import GoogleDrive
 from pydrive2.settings import LoadSettingsFile
 from pydrive2.auth import ServiceAccountCredentials
 
+scriptpath=path.dirname(path.realpath(__file__))
 scope = ['https://www.googleapis.com/auth/drive']
 
 gauth = GoogleAuth()
-gauth.credentials = ServiceAccountCredentials.from_json_keyfile_name("client_secrets.json", scope)
+gauth.credentials = ServiceAccountCredentials.from_json_keyfile_name(path.join(scriptpath,"client_secrets.json"), scope)
 drive = GoogleDrive(gauth)
 
 # If provided arguments incorrect, print usage instructions and exit.
