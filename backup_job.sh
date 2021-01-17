@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 if test -f $PWD/backup_job.conf ;
